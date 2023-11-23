@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Project</span> Management Assistant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Project description form -->
+        <section id="project-description">
+            <h2>Describe Your Project</h2>
+            <form>
+                <textarea id="project-input" rows="4" cols="50" placeholder="Enter project description..."></textarea>
+                <br>
+                <button type="button" id="generate-tasks">Generate Tasks</button>
+            </form>
+        </section>
+
+        <!-- Task list section -->
+        <section id="task-list">
+            <h2>Task List</h2>
+            <!-- Tasks will be dynamically added here -->
+        </section>
+
+        <!-- Gantt Chart display -->
+        <section id="gantt-chart">
+            <h2>Gantt Chart</h2>
+            <!-- Gantt chart will be displayed here -->
+        </section>
+
+        <!-- Export Buttons -->
+        <section id="export-section">
+            <button type="button" id="export-excel">Export to Excel</button>
+            <button type="button" id="export-pdf">Export to PDF</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>Project Management Assistant © 2023</p>
+    </footer>
+</body>
+</html>

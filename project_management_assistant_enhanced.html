@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Assistant</title>
+    <link rel="stylesheet" type="text/css" href="project_management_assistant.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="highlight">Project</span> Management Assistant</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Project description form -->
+        <section id="project-description">
+            <h2>Describe Your Project</h2>
+            <form>
+                <textarea id="project-input" rows="4" cols="50" placeholder="Enter project description..."></textarea>
+                <br>
+                <button type="button" id="generate-tasks">Generate Tasks</button>
+            </form>
+        </section>
+
+        <!-- Task management section -->
+        <section id="task-management">
+            <h2>Manage Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name">
+                <input type="number" id="task-duration" placeholder="Duration (days)">
+                <input type="text" id="task-dependencies" placeholder="Dependencies (comma-separated task names)">
+                <button type="button" id="add-task">Add Task</button>
+                <button type="button" id="edit-task">Edit Task</button>
+                <button type="button" id="delete-task">Delete Task</button>
+            </form>
+        </section>
+
+        <!-- Task list section -->
+        <section id="task-list">
+            <h2>Task List</h2>
+            <!-- Tasks will be dynamically added here -->
+        </section>
+
+        <!-- Gantt Chart display -->
+        <section id="gantt-chart">
+            <h2>Gantt Chart</h2>
+            <!-- Gantt chart will be displayed here -->
+        </section>
+
+        <!-- Export Buttons -->
+        <section id="export-section">
+            <button type="button" id="export-excel">Export to Excel</button>
+            <button type="button" id="export-pdf">Export to PDF</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>Project Management Assistant © 2023</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="project_management_assistant_gantt.js"></script>
+</body>
+</html>
